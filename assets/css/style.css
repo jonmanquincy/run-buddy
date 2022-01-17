@@ -1,3 +1,10 @@
+/* Color Scheme (tired of typing out hex)*/
+:root {
+    --runYellow: #fce138;
+    --runTeal: #39a6b2;
+    --runBlue: #024e76;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -7,20 +14,20 @@
 /* Header Styling */
 header {
     padding: 20px 35px;
-    background-color: #39a6b2;
+    background-color: var(--runTeal);
 }
 
 header h1 {
     font-weight: bold;
     font-size: 36px;
-    color: #fce138;
+    color: var(--runYellow);
     margin: 0;
     display: inline;
   }
 
 header a{
     text-decoration: none;
-    color: #fce138;
+    color: var(--runYellow);
 }
 
 header nav{
@@ -38,22 +45,46 @@ header nav ul li a {
     font-size: 22px;
 }
 
+/* Input Form Section Styling */
+section {
+    padding: 60px;
+}
+
+.hero {
+    background-image: url(../css/images/hero-bg.jpg);
+    height: 600px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.hero-form {
+    color: var(--runBlue);
+    background-color: var(--runYellow);
+    border: solid 3px var(--runBlue);
+    padding: 20px;
+    width: 500px;
+    position: absolute;
+    bottom: 120px;
+    right: 140px;
+}
+
 /* Body Styling */
 body {
-    color: #39a6b2;
+    color: var(--runTeal);
     font-family: Helvetica, Arial, sans-serif;
 }
 
 /* Footer Styling */
 footer {
-    background: #fce138;
+    background: var(--runYellow);
     width: 100%;
     padding: 40px 35px;
 }
 
 footer h2{
     display: inline;
-    color: #024e76;
+    color: var(--runBlue);
     font-size: 30px;
     margin: 0;
 }
@@ -65,5 +96,5 @@ footer div{
 }
 
 footer a{
-    color: #024e76;
+    color: var(--runBlue);
 }
