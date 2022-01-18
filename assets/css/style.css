@@ -5,6 +5,7 @@
     --runBlue: #024e76;
 }
 
+/*Document Wide Styling*/
 * {
     margin: 0;
     padding: 0;
@@ -45,7 +46,7 @@ header nav ul li a {
     font-size: 22px;
 }
 
-/* Input Form Section Styling */
+/* Hero Form Section Styling */
 section {
     padding: 60px;
 }
@@ -68,6 +69,40 @@ section {
     bottom: 120px;
     right: 140px;
 }
+
+.hero-form label {
+    margin: 0 5px;
+}
+
+.hero-form button{
+    color: var(--runYellow);
+    background-color: var(--runBlue);
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+}
+
+.hero-form h3{
+    font-size: 24px;
+    margin: 0;
+}
+
+.hero-form p{
+    margin: 5px 0 15px 0;
+}
+
+/* Input Form Section Styling */
+.form-input {
+    border: 1px solid var(--runBlue);
+    display: block;
+    padding: 7px 15px;
+    font-size: 16px;
+    color: var(--runBlue);
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+
 
 /* Body Styling */
 body {
