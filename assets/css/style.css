@@ -46,6 +46,12 @@ header nav ul li a {
     font-size: 22px;
 }
 
+/* Body Styling */
+body {
+    color: var(--runTeal);
+    font-family: Helvetica, Arial, sans-serif;
+}
+
 /* Hero Form Section Styling */
 section {
     padding: 60px;
@@ -102,12 +108,28 @@ section {
     margin-bottom: 15px;
 }
 
+/* Intro Styling */
 
+.intro {
+    text-align: center;
+}
 
-/* Body Styling */
-body {
+.intro h2 {
+    font-size: 55px;
+    color: var(--runBlue);
+    margin-bottom: 35px;
+    padding: 0 100px 20px 100px;
+    border-bottom: 3px solid;
+    border-color: var(--runYellow);
+    display: inline-block;
+}
+
+.intro p {
+    line-height: 1.7;
     color: var(--runTeal);
-    font-family: Helvetica, Arial, sans-serif;
+    width: 80%;
+    font-size: 20px;
+    margin: 0 auto;
 }
 
 /* Footer Styling */
