@@ -17,14 +17,13 @@
 
 .secondary-content{
     width: 80%;
-    margin: 0;
+    margin: 0 auto;
     color: var(--runBlue);    
 }
 
 .secondary-content h3{
     font-size: 25px;
     margin: 20px 0;
-
 }
 
 .secondary-content p{
