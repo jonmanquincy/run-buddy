@@ -43,6 +43,9 @@
 header {
     padding: 20px 35px;
     background-color: var(--runTeal);
+    display: flex;
+    justify-content: space-between;
+    flex-wrap:  wrap;
 }
 
 header h1 {
@@ -50,7 +53,6 @@ header h1 {
     font-size: 36px;
     color: var(--runYellow);
     margin: 0;
-    display: inline;
   }
 
 header a{
@@ -59,7 +61,6 @@ header a{
 }
 
 header nav{
-    float: right;
     margin: 7px 0;
 }
 
