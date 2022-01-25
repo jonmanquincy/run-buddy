@@ -20,14 +20,19 @@
     text-align: right;
 }
 
+.flex-row {
+    display: flex;
+}
+
 /* Title Styling */
 .section-title {
     font-size: 55px;
     color: var(--runBlue);
     margin-bottom: 35px;
-    padding: 0 100px 20px 100px;
-    display: inline-block;
-    border-bottom: 3px solid;
+    padding-bottom: 20px;
+    text-align: center;
+    margin: 0 auto 35px auto;
+    width: 50%;
 }
 
 /*Border Styles*/
@@ -163,21 +168,17 @@ section {
 
 /* Intro Styling */
 
-.intro {
-    text-align: center;
-}
-
 .intro p {
     line-height: 1.7;
     color: var(--runTeal);
     width: 80%;
     font-size: 20px;
     margin: 0 auto;
+    text-align: center;
 }
 
 /* Steps Styling */
 .steps {
-    text-align: center;
     background-color: var(--runYellow);
 }
 
@@ -207,7 +208,6 @@ section {
 
 /* Trainers Styling */
 .trainers {
-    text-align: center;
 }
 
 .trainer {
@@ -249,7 +249,6 @@ section {
 
 .contact {
     background-color: var(--runBlue);
-    text-align: center;
 }
 
 .contact-title {
