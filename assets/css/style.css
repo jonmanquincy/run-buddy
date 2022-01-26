@@ -1,8 +1,8 @@
 /* Color Scheme (tired of typing out hex)*/
 :root {
-    --runYellow: #fce138;
-    --runTeal: #39a6b2;
-    --runBlue: #024e76;
+    --primary-color: #fce138;
+    --tertiary-color: #39a6b2;
+    --secondary-color: #024e76;
 }
 
 /*Document Wide Styling*/
@@ -27,7 +27,7 @@
 /* Title Styling */
 .section-title {
     font-size: 48px;
-    color: var(--runBlue);
+    color: var(--secondary-color);
     margin-bottom: 35px;
     padding-bottom: 20px;
     text-align: center;
@@ -37,17 +37,17 @@
 
 /*Border Styles*/
 .primary-border {
-    border-color: var(--runYellow);
+    border-color: var(--primary-color);
 }
   
 .secondary-border {
-    border-color: var(--runTeal);
+    border-color: var(--tertiary-color);
 }
 
 /* Header Styling */
 header {
     padding: 20px 35px;
-    background-color: var(--runTeal);
+    background-color: var(--tertiary-color);
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -65,13 +65,13 @@ header {
 header h1 {
     font-weight: bold;
     font-size: 36px;
-    color: var(--runYellow);
+    color: var(--primary-color);
     margin: 0;
   }
 
 header a{
     text-decoration: none;
-    color: var(--runYellow);
+    color: var(--primary-color);
 }
 
 header nav{
@@ -93,15 +93,15 @@ header nav ul li a {
 }
 
 header nav ul li a:hover {
-    background: var(--runYellow);
-    color: var(--runBlue);
+    background: var(--primary-color);
+    color: var(--secondary-color);
     border-radius: 15px;
     text-shadow: none;
 }
 
 /* Body Styling */
 body {
-    color: var(--runTeal);
+    color: var(--tertiary-color);
     font-family: Helvetica, Arial, sans-serif;
 }
 
@@ -128,9 +128,9 @@ section {
   }
 
 .hero-form {
-    color: var(--runBlue);
-    background-color: var(--runYellow);
-    border: solid 3px var(--runBlue);
+    color: var(--secondary-color);
+    background-color: var(--primary-color);
+    border: solid 3px var(--secondary-color);
     padding: 20px;
     width: 40%;
     margin: 3.5%;
@@ -159,8 +159,8 @@ section {
 }
 
 .hero-form button{
-    color: var(--runYellow);
-    background-color: var(--runBlue);
+    color: var(--primary-color);
+    background-color: var(--secondary-color);
     border: none;
     padding: 10px 20px;
     font-size: 16px;
@@ -225,35 +225,28 @@ section {
 }
 
 .radio-wrapper label::before {
-    content: "";
-    width: 20px;
-    height: 20px;
     border-radius: 50%;
-    background: #024e76;
-    position: absolute;
-    left: -29px;
-    top: -3px;
 }
 
 .radio-wrapper label::after {
-    background-image: radial-gradient(circle, #39a6b2, #024e76);
     content: "";
-    width: 20px;
     height: 20px;
+    width: 20px;
     border-radius: 50%;
-    background: #024e76;
+    background: var(--secondary-color);
     position: absolute;
     left: -29px;
     top: -3px;
+    background-image: radial-gradient(circle, var(--tertiary-color), var(--secondary-color));
 }
 
 /* Input Form Section Styling */
 .form-input {
-    border: 1px solid var(--runBlue);
+    border: 1px solid var(--secondary-color);
     display: block;
     padding: 7px 15px;
     font-size: 16px;
-    color: var(--runBlue);
+    color: var(--secondary-color);
     width: 100%;
     margin-bottom: 15px;
     border-radius: 15px;
@@ -269,7 +262,7 @@ section {
 
 .intro p {
     line-height: 1.7;
-    color: var(--runTeal);
+    color: var(--tertiary-color);
     width: 80%;
     font-size: 20px;
     margin: 0 auto;
@@ -278,7 +271,7 @@ section {
 
 /* Steps Styling */
 .steps {
-    background-color: var(--runYellow);
+    background-color: var(--primary-color);
 }
 
 .step {
@@ -288,7 +281,7 @@ section {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: var(--runTeal);
+    justify-content: var(--tertiary-color);
     border-bottom: 1px solid #39a6b2;
 }
 
@@ -317,20 +310,20 @@ section {
 }
 
 .step h3 {
-    color: var(--runBlue);
+    color: var(--secondary-color);
     font-size: 46px;
     flex: 1 30%;
 }
   
 .step-text p {
-    color: var(--runTeal);
+    color: var(--tertiary-color);
     font-size: 18px;
 }
 
 .step-text h4 {
     font-size: 26px;
     line-height: 1.5;
-    color: var(--runBlue);
+    color: var(--secondary-color);
 }
 
 /* Trainers Styling */
@@ -345,8 +338,8 @@ section {
 .trainer {
     margin: 20px;
     flex: 1;
-    background: var(--runBlue);
-    color: var(--runYellow);
+    background: var(--secondary-color);
+    color: var(--primary-color);
 }
 
 .trainer img {
@@ -375,15 +368,15 @@ section {
 /* Contact Styling */
 
 .contact {
-    background-color: var(--runBlue);
+    background-color: var(--secondary-color);
 }
 
 .contact-title {
-    color: var(--runYellow);
+    color: var(--primary-color);
     font-size: 55px;
     display: inline-block;
     padding: 0 100px 20px 100px;
-    border-bottom: 3px solid var(--runTeal);
+    border-bottom: 3px solid var(--tertiary-color);
     margin-bottom: 35px;
 }
 
@@ -421,8 +414,8 @@ section {
 .contact-form button{
     width: 100%;
     border: none;
-    background: var(--runYellow);
-    color: var(--runBlue);
+    background: var(--primary-color);
+    color: var(--secondary-color);
     text-align: center;
     padding: 15px 0;
     font-size: 16px;
@@ -435,11 +428,11 @@ section {
 }
 
 .contact-form input, .contact-form textarea{
-    border: 1px solid var(--runBlue);
+    border: 1px solid var(--secondary-color);
     display: block;
     padding: 7px 15px;
     font-size: 16px;
-    color: var(--runBlue);
+    color: var(--secondary-color);
     width: 100%;
     margin-bottom: 15px;
     margin-top: 5px;
@@ -453,7 +446,7 @@ section {
 
 /* Footer Styling */
 footer {
-    background: var(--runYellow);
+    background: var(--primary-color);
     width: 100%;
     padding: 40px 35px;
     display: flex;
@@ -462,7 +455,7 @@ footer {
 }
 
 footer h2{
-    color: var(--runBlue);
+    color: var(--secondary-color);
     font-size: 30px;
     margin: 0;
 }
@@ -473,7 +466,7 @@ footer div{
 }
 
 footer a{
-    color: var(--runBlue);
+    color: var(--secondary-color);
 }
 
 /* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
